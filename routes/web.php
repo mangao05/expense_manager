@@ -21,6 +21,8 @@ Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
 
 Route::resource('expenses', 'ExpensesController')->middleware('auth');
+Route::get('/changepassword', 'HomeController@change')->middleware('auth');
+Route::post('/changepassword', 'HomeController@changePassword')->middleware('auth');
 
 
 Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()

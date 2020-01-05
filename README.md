@@ -6,6 +6,13 @@ Clone App
 
 Change Database Credentials
 
+## Account
+
+Default Admin Account
+
+username/email: admin@admin.com
+password: password
+
 ### Step 1
 
 ```
@@ -22,3 +29,4 @@ Change Database Credentials
 ```bash
     php artisan db:seed --class=UsersTableSeeder
 ```
+  
